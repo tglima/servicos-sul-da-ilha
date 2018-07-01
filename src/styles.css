@@ -1,1 +1,50 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* ----------------------------- Style  GLOBAL ----------------------------- */
+
+html {
+    height: 100%;
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    padding-bottom: 20rem;
+  }
+
+  section {
+    padding: 3rem 0;
+  }
+
+  @media (min-width: 768px) {
+    body{
+      padding-bottom: 12rem;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    body {
+      padding-bottom: 10.5rem;
+    }
+  }
+
+  h5 {
+      color:#999
+  }
+
+  h4, h3 {
+      color:#555;
+  }
+
+  .fa-whatsapp {
+    color: #35cd96;
+  }
+  
+  .fa-phone-square {
+    color: #329af0;
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+  }
