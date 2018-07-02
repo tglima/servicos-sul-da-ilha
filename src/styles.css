@@ -30,11 +30,7 @@ html {
   }
 
   h5 {
-      color:#999
-  }
-
-  h4, h3 {
-      color:#555;
+      color:#999 !important;
   }
 
   .fa-whatsapp {
