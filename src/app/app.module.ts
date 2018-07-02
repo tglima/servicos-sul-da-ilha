@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopComponent } from './components/top/top.component';
 import { BottomComponent } from './components/bottom/bottom.component';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TopComponent,
-    BottomComponent
+    BottomComponent,
+    HomeComponent
   ],
   imports: [
     NgbModule.forRoot(),
