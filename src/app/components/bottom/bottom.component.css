@@ -1,0 +1,47 @@
+/* ----------------------------- Style  BOTTOM ----------------------------- */
+
+footer {
+    background: #343a40;
+    color: #D3DCDC;
+    padding-top: .5rem;
+    padding-bottom: .75rem;
+    /*Estilos em teste*/
+    position: absolute; /* Aplha */
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* width: 100%; */
+   }
+
+   footer a, footer a:focus, footer a:hover {
+    color: #FFF;
+   }
+
+
+  .footer-logo {
+    padding-top: 1rem;
+  }
+
+  .footer-nav a {
+    border-bottom: 1px solid  #343a40;
+  }
+
+  .footer-nav a:hover, .footer-nav a:focus {
+    border-bottom: 1px solid  #D3DCDC;
+  }
+
+  .footer-logo, .footer-nav, .footer-copyright {
+    padding-bottom: .2rem;
+  }
+
+  .footer-copyright {
+    font-size: 0.75em;
+    text-align: center;
+   }
+
+   @media (min-width: 576px){
+     .footer-nav .navbar-expand-sm .navbar-nav .nav-link {
+       padding-right: 1rem;
+       padding-left: 1rem;
+     }
+   }
