@@ -6,84 +6,38 @@
 <hr />
 
 <div class="anuncios">
-  <div class="row">
-    <div class="col-md-4">
-      <img src="assets/anuncios/1/img1.jpeg" class="img-fluid img-ads">
-    </div>
-    <div class="col-md-8">
-      <div class="row m-0">
-        <h4>Lorem Ipsum Dolor</h4>
-      </div>
+  <div *ngFor="let anuncio of anuncios">
+      <div class="row">
+          <div class="col-md-4">
+            <img [src]="anuncio.imagens[0].url" class="img-fluid img-ads">
+          </div>
+          <div class="col-md-8">
+            <div class="row m-0">
+              <h4>{{ anuncio.titulo }}</h4>
+            </div>
+      
+            <div class="row m-0">
+              <h5>{{ anuncio.descricao }}</h5>
+            </div>
+      
+            <div class="row m-0">
+              <p *ngIf="anuncio.whatsapp; else onlyPhone" class="telefone">
+                <i class="fab fa-whatsapp"></i> {{ anuncio.telefone }}
+              </p>
+              
+              <ng-template #onlyPhone>
+                <p class="telefone">
+                  <i class="fas fa-phone-square"></i> {{ anuncio.telefone }}
+                </p>
+              </ng-template>
+            </div>
+      
+            <div class="row m-0">
+              <a href="#" class="btn btn-outline-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <hr />
 
-      <div class="row m-0">
-        <h5>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec feugiat dui eu sagittis ornare. 
-          Nam blandit, risus in mattis commodo, urna sem cursus nulla, quis dapibus libero risus a dui.
-        </h5>
-      </div>
-
-      <div class="row m-0">
-        <p class="telefone"><i class="fab fa-whatsapp"></i> Telefone:  48 00000-0000</p>
-      </div>
-
-      <div class="row m-0">
-        <a href="#" class="btn btn-outline-primary">Ver mais</a>
-      </div>
-    </div>
   </div>
-  <hr />
-  <div class="row">
-    <div class="col-md-4">
-      <img src="assets/anuncios/2/img1.jpeg" class="img-fluid img-ads">
-    </div>
-    <div class="col-md-8">
-      <div class="row m-0">
-        <h4>Vestibulum ante ipsum</h4>
-      </div>
-
-      <div class="row m-0">
-        <h5>
-          Quisque sit amet elit tristique nunc fringilla tincidunt vel ut velit. 
-          Pellentesque iaculis sapien nec nisi finibus vulputate. 
-          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices nullam.
-        </h5>
-      </div>
-
-      <div class="row m-0">
-        <p class="telefone"><i class="fab fa-whatsapp"></i> Telefone:  48 0000-0000</p>
-      </div>
-
-      <div class="row m-0">
-        <a href="#" class="btn btn-outline-primary">Ver mais</a>
-      </div>
-    </div>
-  </div>
-  <hr />
-  <div class="row">
-    <div class="col-md-4">
-      <img src="assets/anuncios/3/img1.jpeg" class="img-fluid img-ads">
-    </div>
-    <div class="col-md-8">
-      <div class="row m-0">
-        <h4>Proin maximus</h4>
-      </div>
-
-      <div class="row m-0">
-        <h5>
-            Lorem ipsum dolor sit amet, cursus vitae fermentum eget, ultricies eget augue. 
-            Fusce sit amet imperdiet tortor, ac laoreet nisi.
-        </h5>
-      </div>
-
-
-      <div class="row m-0">
-        <p class="telefone"><i class="fab fa-whatsapp"></i> Telefone:  48 00000-0000</p>
-      </div>
-
-      <div class="row m-0">
-        <a href="#" class="btn btn-outline-primary">Ver mais</a>
-      </div>
-    </div>
-  </div>
-  <hr />
 </div>
