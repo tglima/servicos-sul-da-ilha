@@ -1,0 +1,131 @@
+{
+    "anuncios": [
+        {
+            "id": 1,
+            "anunciante": "owner@email.com",
+            "categoria": "tele-entrega",
+            "titulo": "Hamburgueria Ribeirão",
+            "descricao": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lobortis nullam.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": true,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/1/img1.jpeg"
+                },
+                {
+                    "url": "/assets/anuncios/1/img2.jpeg"
+                },
+                {
+                    "url": "/assets/anuncios/1/img3.jpeg"
+                },
+                {
+                    "url": "/assets/anuncios/1/img4.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "anunciante": "owner@email.com",
+            "categoria": "manutencao-e-limpeza",
+            "titulo": "Irmãos Denger",
+            "descricao": "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per posuere.",
+            "telefone": "(48) 3000-0000",
+            "whatsapp": false,
+            "destaque": true,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/2/img1.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "anunciante": "owner@email.com",
+            "categoria": "saude-e-beleza",
+            "titulo": "Markus Fisioterapia Domiciliar",
+            "descricao": "Orci varius natoque penatibus et magnis dis parturient montes orci aliquam.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": true,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/3/img1.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "anunciante": "owner@email.com",
+            "categoria": "tele-entrega",
+            "titulo": "Ca Comida Japonesa",
+            "descricao": "Vestibulum egestas lectus nisi, in rutrum quam imperdiet a. Sed massa nunc.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": false,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/4/img1.jpeg"
+                },
+                {
+                    "url": "/assets/anuncios/4/img2.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "anunciante": "owner@email.com",
+            "categoria": "tele-entrega",
+            "titulo": "Doces Gourmet da Paloma",
+            "descricao": "Nulla risus sapien, tincidunt ut lorem vitae, elementum commodo augue. Pellentesque metus.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": false,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/5/img1.jpeg"
+                },
+                {
+                    "url": "/assets/anuncios/5/img2.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "anunciante": "owner@email.com",
+            "categoria": "tele-entrega",
+            "titulo": "Soraia Marmita Fitness",
+            "descricao": "Donec eu diam et sem facilisis rhoncus vel at mauris. Praesent ut nunc volutpat.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": false,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/6/img1.jpeg"
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "anunciante": "owner@email.com",
+            "categoria": "manutencao-e-limpeza",
+            "titulo": "Rose Limpeza",
+            "descricao": "Fusce luctus tellus vel dui eleifend sagittis. Proin vehicula libero id est placerat amet.",
+            "telefone": "(48) 90000-0000",
+            "whatsapp": true,
+            "destaque": false,
+            "status": "aprovado",
+            "imagens": [
+                {
+                    "url": "/assets/anuncios/7/img1.jpg"
+                }
+            ]
+        }
+    ]
+}
