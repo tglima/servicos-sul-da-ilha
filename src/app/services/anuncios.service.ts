@@ -19,4 +19,15 @@ export class AnunciosService {
     });
   }
 
+  public getAnuncioPorID(id: number): Promise<Anuncio> {
+    return this.http.get(API_URL + `anuncios?id=${id}`)
+    .toPromise()
+    .then((res => {
+      return res.json()[0]; }))
+    .catch(
+      err => {
+        throw new Error(err.message);
+      });
+  }
+
 }
