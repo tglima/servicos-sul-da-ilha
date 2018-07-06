@@ -8,6 +8,7 @@ import { TopComponent } from './components/top/top.component';
 import { BottomComponent } from './components/bottom/bottom.component';
 import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
+import { AnuncioComponent } from './components/anuncio/anuncio.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { ErrorComponent } from './components/error/error.component';
     TopComponent,
     BottomComponent,
     HomeComponent,
-    ErrorComponent
+    ErrorComponent,
+    AnuncioComponent
   ],
   imports: [
     HttpModule,

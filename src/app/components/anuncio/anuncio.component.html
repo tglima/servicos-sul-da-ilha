@@ -1,0 +1,78 @@
+<div *ngIf="anuncio != undefined">
+  <div class="row">
+      <div class="col">
+        <h4>{{ anuncio.titulo }}</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 col-lg-5">
+        <div class="img-capa">
+          <img [src]="anuncio.imagens[0].url">
+        </div>
+        <div class="img thumbnails">
+          <img *ngFor="let img of anuncio.imagens" [src]="img.url" (click)="openModal(content)">
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-7">
+        <div class="container-fluid">
+          <div class="row">
+            <h5>Descrição:</h5>
+          </div>
+          <div class="row">
+            <span class="desc">
+              {{ anuncio.descricao }}
+            </span>
+          </div>
+          <div class="row pt-3">
+            <h5>Contato:</h5>
+          </div>
+          <div class="row">
+            <span *ngIf="anuncio.whatsapp; else onlyPhone" class="phone pr-5">
+                  <i class="fab fa-whatsapp"></i> {{ anuncio.telefone }}
+            </span>
+                
+            <ng-template #onlyPhone>
+              <span class="phone pr-5">
+                <i class="fas fa-phone-square"></i> {{ anuncio.telefone }}
+              </span>
+            </ng-template>        
+          </div>
+          <div class="row pt-3">
+            <h5>Formas de Pagamento:</h5>
+          </div>
+    
+          <div class="row">
+            <span class="money pr-5">
+              <i class="far fa-money-bill-alt"></i>
+              Dinheiro
+            </span>
+            <span class="credit-card">
+              <i class="far fa-credit-card"></i>
+              Cartão de Débito
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <ng-template #content let-c="close" let-d="dismiss">
+      <div class="modal-header">
+        <button type="button" class="close" (click)="d('Cross click')">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <ngb-carousel>
+          <ng-template ngbSlide *ngFor="let img of anuncio.imagens">
+            <img [src]="img.url" class="img-fluid">
+          </ng-template>
+        </ngb-carousel>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-primary" (click)="c()">Fechar</button>
+      </div>
+    </ng-template>
+    
+</div>

@@ -1,0 +1,32 @@
+/* ----------------------------- Style ANUNCIO ----------------------------- */
+
+.img-capa img {
+    border-radius: 5px;
+    width: 360px;
+    height:  240px;
+  }
+
+  .thumbnails {
+    margin-top: 1em;
+  }
+
+  .thumbnails img {
+    border-radius: 5px;
+    width: 108px;
+    height: 76px;
+    margin-right: 8px;
+    margin-bottom: 1.5em;
+  }
+
+  @media (max-width: 360px){
+    .img-capa img {
+      width: 280px;
+      height:  180px;
+    }
+    .thumbnails img {
+      width: 132px;
+      height: 100px;
+    }
+  }
+
+/* ------------------------------------------------------------------------- */
