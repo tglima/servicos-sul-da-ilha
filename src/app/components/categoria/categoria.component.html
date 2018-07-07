@@ -1,0 +1,43 @@
+<div class="header">
+  <h3 class="text-center">{{ titulo }}</h3>
+  <h5 class="text-center">{{ descricao }}</h5>
+</div>
+
+<hr />
+
+<div class="anuncios">
+  <div *ngFor="let anuncio of anuncios">
+      <div class="row">
+          <div class="col-md-4">
+            <img [src]="anuncio.imagens[0].url" class="img-fluid img-ads">
+          </div>
+          <div class="col-md-8">
+            <div class="row m-0">
+              <h4>{{ anuncio.titulo }}</h4>
+            </div>
+      
+            <div class="row m-0">
+              <h5>{{ anuncio.descricao }}</h5>
+            </div>
+      
+            <div class="row m-0">
+              <p *ngIf="anuncio.whatsapp; else onlyPhone" class="telefone">
+                <i class="fab fa-whatsapp"></i> {{ anuncio.telefone }}
+              </p>
+              
+              <ng-template #onlyPhone>
+                <p class="telefone">
+                  <i class="fas fa-phone-square"></i> {{ anuncio.telefone }}
+                </p>
+              </ng-template>
+            </div>
+      
+            <div class="row m-0">
+              <a [routerLink]="['/anuncio/', anuncio.id]" class="btn btn-outline-primary">Ver mais</a>
+            </div>
+          </div>
+        </div>
+        <hr />
+
+  </div>
+</div>
