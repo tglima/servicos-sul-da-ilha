@@ -36,7 +36,6 @@ export class AnuncioComponent implements OnInit {
         }
       })
       .catch( (err) => {
-        console.error('Encontrado: ', err);
         this.router.navigate(['/not-found']);
       });
     });
