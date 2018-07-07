@@ -30,4 +30,26 @@ export class AnunciosService {
       });
   }
 
+  public getAnuncioPorCat(cat: string): Promise<Anuncio[]> {
+    return this.http.get(API_URL + `anuncios?categoria=${cat}`)
+    .toPromise()
+    .then((res => {
+      return res.json(); }))
+    .catch(
+      err => {
+        throw new Error(err.message);
+      });
+  }
+
+  public getCategoria(cat: string): Promise<any> {
+    return this.http.get(API_URL + `categorias?url=${cat}`)
+    .toPromise()
+    .then( (res => {
+      return res.json()[0]; }))
+    .catch(
+      err => {
+        throw new Error(err.message);
+      });
+  }
+
 }
