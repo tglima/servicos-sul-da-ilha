@@ -127,5 +127,25 @@
                 }
             ]
         }
+    ],
+    "categorias": [
+      {
+        "id": 1,
+        "url": "tele-entrega",
+        "titulo": "Tele Entrega",
+        "descricao": "Fusce luctus tellus vel dui eleifend sagittis"
+      },
+      {
+        "id": 2,
+        "url": "saude-e-beleza",
+        "titulo": "Saúde e Beleza",
+        "descricao": "Proin vehicula libero id est placerat"
+      },
+      {
+        "id": 3,
+        "url": "manutencao-e-limpeza",
+        "titulo": "Manutenção e Limpeza",
+        "descricao": "Orci varius natoque penatibus et magnis dis parturient"
+      }
     ]
 }
