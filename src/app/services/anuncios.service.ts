@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
 import { Anuncio } from '../models/anuncio.model';
 import { environment } from '../../environments/environment';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators';
 
 const API_URL = environment.apiUrl;
 
@@ -50,6 +52,11 @@ export class AnunciosService {
       err => {
         throw new Error(err.message);
       });
+  }
+
+  public pesquisarAnuncio(termo: string): Observable<Anuncio[]> {
+    return this.http.get(API_URL + `anuncios?descricao_like=${termo}`)
+    .pipe( map(res => res.json() ));
   }
 
 }
