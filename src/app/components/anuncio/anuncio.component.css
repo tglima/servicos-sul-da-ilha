@@ -2,8 +2,7 @@
 
 .img-capa img {
     border-radius: 5px;
-    width: 360px;
-    height:  240px;
+    width: 100%;
   }
 
   .thumbnails {
@@ -19,10 +18,6 @@
   }
 
   @media (max-width: 360px){
-    .img-capa img {
-      width: 280px;
-      height:  180px;
-    }
     .thumbnails img {
       width: 132px;
       height: 100px;
