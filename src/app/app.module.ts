@@ -10,6 +10,7 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
+import { ResumoPipe } from './pipes/resumo.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { CategoriaComponent } from './components/categoria/categoria.component';
     HomeComponent,
     ErrorComponent,
     AnuncioComponent,
-    CategoriaComponent
+    CategoriaComponent,
+    ResumoPipe
   ],
   imports: [
     HttpModule,
