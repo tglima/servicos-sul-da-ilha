@@ -14,19 +14,34 @@
   }
 
 
-  input[type=search] {
+  input[type=text] {
   background-color: white;
   background-image: url('/assets/search.png');
   background-position: 95%;
   background-repeat: no-repeat;
   }
 
-  input[type='search']:focus {
+  input[type='text']:focus {
     background-image: none;
   }
 
-  @media (min-width: 576px) {
-    .form-inline .form-control {
-        width: 300px;
+  .resultados {
+    z-index: 999;
+  }
+
+
+  @media (min-width: 992px) { 
+    .form-inline, .form-control, .resultados {
+      width: 300px;
+  }
+    .resultados {
+      top: 52px;
+      position: absolute;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .form-inline, .form-control, .resultados {
+      width: 100%;
     }
   }

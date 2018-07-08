@@ -16,7 +16,30 @@
       </li>
     </ul>
     <form class="form-inline">
-      <input class="form-control" type="search" placeholder="Pesquisar">
+      <input  type="text"
+              class="form-control"
+              placeholder="Pesquisar"
+              #termoDaPesquisa
+              (keyup)="pesquisar(termoDaPesquisa.value)"
+              (focus)="pesquisar(termoDaPesquisa.value)"
+              (focusout)="limparPesquisa()"
+              >
+      <div class="list-group resultados">
+          <a
+          class="list-group-item"
+          *ngFor="let anuncio of anuncios | async" 
+          [routerLink]="[ '/anuncio', anuncio.id]"
+          (click)="termoDaPesquisa.value=null"
+          >
+          {{ anuncio.titulo  | resumido }}
+        </a>
+        <div class="list-group-item list-group-item-light" 
+        *ngIf="( anuncios | async)?.length == 0 && showResult ">
+          <span>
+            Sem resultados para este termo.
+          </span>
+        </div>
+      </div>
     </form>
 
   </div>
