@@ -11,16 +11,16 @@
 
   .thumbnails img {
     border-radius: 5px;
-    width: 108px;
-    height: 76px;
-    margin-right: 8px;
-    margin-bottom: 1.5em;
+    width: 84px;
+    height: 60px;
+    margin-right: 1em;
+    margin-bottom: 1em;
   }
 
   @media (max-width: 360px){
     .thumbnails img {
-      width: 132px;
-      height: 100px;
+      width: 44%;
+      height: auto;
     }
   }
 
