@@ -1,6 +1,5 @@
 export class Anuncio {
     public id: number;
-    public anunciante: string;
     public categoria: string;
     public titulo: string;
     public descricao: string;
