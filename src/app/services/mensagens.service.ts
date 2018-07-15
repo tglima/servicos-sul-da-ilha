@@ -1,29 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Http, RequestOptions, Headers } from '@angular/http';
-import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Mensagem } from '../models/mensagem.model';
 import { environment } from '../../environments/environment';
-import { map } from 'rxjs/operators';
 
-const API_URL = environment.apiUrl;
+const URL = (environment.apiUrl + 'mensagens');
+const httpOptions = { headers: new HttpHeaders({ 'content-Type': 'application/json' })};
 
 @Injectable()
 export class MensagemService {
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient ) { }
 
-  public gravarMensagem(msg: Mensagem): Observable<number> {
-    const headers: Headers = new Headers();
-    msg.data = new Date();
-    msg.msgLida = false;
-    headers.append('Content-type', 'application/json');
-    return this.http.post(
-      `${API_URL}mensagens`, JSON.stringify(msg),
-      new RequestOptions( { headers: headers })
-    ).pipe(
-      map( (res) => res.json().id )
-    );
+  public postMessage(msg: Mensagem) {
+    return this.http.post(URL, JSON.stringify(msg), httpOptions);
   }
-
 
 }

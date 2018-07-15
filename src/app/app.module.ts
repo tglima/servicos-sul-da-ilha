@@ -11,6 +11,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { ResumoPipe } from './pipes/resumo.pipe';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ResumoPipe } from './pipes/resumo.pipe';
     HttpModule,
     NgbModule.forRoot(),
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
