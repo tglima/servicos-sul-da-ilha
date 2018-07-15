@@ -6,7 +6,7 @@ export class Mensagem {
         public email: string,
         public telefone: string,
         public msgTexto: string,
-        public foiLida: false,
+        public foiLida = false,
         public data = new Date()
     ) { }
 }
