@@ -1,0 +1,19 @@
+/* ----------------------------- Style Contato ----------------------------- */
+
+textarea.ng-invalid.ng-touched, input.ng-invalid.ng-touched {
+    border: 1px solid #dc3545;
+}
+
+textarea.ng-valid.ng-touched, input.ng-valid.ng-touched {
+    border: 1px solid #28a745;
+}
+
+textarea.ng-invalid.ng-touched:focus, input.ng-invalid.ng-touched:focus {
+    border-color: #dc3545;
+    box-shadow: 0 0 0 0.2rem rgba(220,53,69,.25);
+}
+
+textarea.ng-valid.ng-touched:focus, input.ng-valid.ng-touched:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 0 0.2rem rgba(40,167,69,.25);
+}

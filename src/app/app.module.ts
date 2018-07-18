@@ -10,8 +10,11 @@ import { HomeComponent } from './components/home/home.component';
 import { ErrorComponent } from './components/error/error.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
+import { ContatoComponent } from './components/contato/contato.component';
 import { ResumoPipe } from './pipes/resumo.pipe';
 import { HttpClientModule } from '@angular/common/http';
+import { IMaskModule } from 'angular-imask';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -22,9 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
     ErrorComponent,
     AnuncioComponent,
     CategoriaComponent,
+    ContatoComponent,
     ResumoPipe
   ],
   imports: [
+    ReactiveFormsModule,
+    IMaskModule,
     HttpModule,
     NgbModule.forRoot(),
     BrowserModule,
