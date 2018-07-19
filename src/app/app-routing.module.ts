@@ -7,6 +7,7 @@ import { ErrorComponent } from './components/error/error.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { ContatoComponent } from './components/contato/contato.component';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -15,6 +16,8 @@ const routes: Routes = [
   { path: 'anuncio/:id', component: AnuncioComponent },
   { path: 'cat', component: HomeComponent },
   { path: 'cat/:categoria', component: CategoriaComponent },
+  { path: 'sobre', component: SobreComponent },
+  { path: 'sobre/:tab', component: SobreComponent },
   { path: '**', component: ErrorComponent }
 ];
 

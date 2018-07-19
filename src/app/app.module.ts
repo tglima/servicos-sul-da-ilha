@@ -14,6 +14,7 @@ import { ResumoPipe } from './pipes/resumo.pipe';
 import { HttpClientModule } from '@angular/common/http';
 import { IMaskModule } from 'angular-imask';
 import { ReactiveFormsModule } from '@angular/forms';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     AnuncioComponent,
     CategoriaComponent,
     ContatoComponent,
-    ResumoPipe
+    ResumoPipe,
+    SobreComponent
   ],
   imports: [
     ReactiveFormsModule,
