@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 import { HomeComponent } from './components/home/home.component';
-import { ErrorComponent } from './components/error/error.component';
+import { Error404Component } from './components/error404/error404.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { ContatoComponent } from './components/contato/contato.component';
@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'cat/:categoria', component: CategoriaComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'sobre/:tab', component: SobreComponent },
-  { path: '**', component: ErrorComponent }
+  { path: '**', component: Error404Component }
 ];
 
 @NgModule({

@@ -32,7 +32,7 @@ export class AnuncioComponent implements OnInit {
       })
       .then( () => {
         if (this.anuncio === undefined) {
-          this.router.navigate(['/not-found']);
+          this.router.navigate(['/404']);
         }
       })
       .catch( (err) => {

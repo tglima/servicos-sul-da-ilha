@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { TopComponent } from './components/top/top.component';
 import { BottomComponent } from './components/bottom/bottom.component';
 import { HomeComponent } from './components/home/home.component';
-import { ErrorComponent } from './components/error/error.component';
 import { AnuncioComponent } from './components/anuncio/anuncio.component';
 import { CategoriaComponent } from './components/categoria/categoria.component';
 import { ContatoComponent } from './components/contato/contato.component';
@@ -16,6 +15,7 @@ import { IMaskModule } from 'angular-imask';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SobreComponent } from './components/sobre/sobre.component';
 import { Error503Component } from './components/error503/error503.component';
+import { Error404Component } from './components/error404/error404.component';
 
 @NgModule({
   declarations: [
@@ -23,13 +23,13 @@ import { Error503Component } from './components/error503/error503.component';
     TopComponent,
     BottomComponent,
     HomeComponent,
-    ErrorComponent,
     AnuncioComponent,
     CategoriaComponent,
     ContatoComponent,
     ResumoPipe,
     SobreComponent,
-    Error503Component
+    Error503Component,
+    Error404Component
   ],
   imports: [
     ReactiveFormsModule,

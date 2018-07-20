@@ -27,7 +27,7 @@ export class SobreComponent implements OnInit {
       } else if (idTab === 'privacidade' || idTab === 'termos') {
         this.selectedTab = idTab;
       } else {
-        this.router.navigate(['/not-found']);
+        this.router.navigate(['/404']);
       }
     });
   }

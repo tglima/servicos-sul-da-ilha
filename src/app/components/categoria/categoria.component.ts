@@ -33,7 +33,7 @@ export class CategoriaComponent implements OnInit {
       })
       .then(() => {
         if (this.anuncios.length === 0) {
-          this.router.navigate(['/not-found']);
+          this.router.navigate(['/404']);
         } else {
           this.anunciosService.getCategoria( this.anuncios[0].categoria )
           .then( (cat: any) => {

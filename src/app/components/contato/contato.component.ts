@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { MensagemService } from '../../services/mensagens.service';
 import { Mensagem } from '../../models/mensagem.model';
-import { map, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-contato',
