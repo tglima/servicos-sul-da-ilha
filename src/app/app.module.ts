@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { IMaskModule } from 'angular-imask';
 import { ReactiveFormsModule } from '@angular/forms';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { Error503Component } from './components/error503/error503.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     CategoriaComponent,
     ContatoComponent,
     ResumoPipe,
-    SobreComponent
+    SobreComponent,
+    Error503Component
   ],
   imports: [
     ReactiveFormsModule,
