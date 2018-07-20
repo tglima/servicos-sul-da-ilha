@@ -1,4 +1,4 @@
-<div class="header">
+<div class="header" *ngIf="anuncios !== null">
   <h3 class="text-center">{{ titulo }}</h3>
   <h5 class="text-center">{{ descricao }}</h5>
 </div>
@@ -40,4 +40,14 @@
         <hr />
 
   </div>
+</div>
+
+<div *ngIf="anuncios === undefined">
+    <div class="col-sm-12">
+        <img src="assets/loading.gif" class="mx-auto d-block">
+    </div>
+</div>
+
+<div *ngIf="anuncios === null">
+    <app-error503></app-error503>
 </div>

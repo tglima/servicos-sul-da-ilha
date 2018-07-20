@@ -42,8 +42,9 @@ export class CategoriaComponent implements OnInit {
           });
         }
       })
-      .catch(() => {
-        this.router.navigate(['/not-found']);
+      .catch((err) => {
+        console.error('Error ao carregar o anúncio: \n', err);
+        this.anuncios = null;
       });
     });
   }
