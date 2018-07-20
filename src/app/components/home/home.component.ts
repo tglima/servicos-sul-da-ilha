@@ -18,8 +18,9 @@ export class HomeComponent implements OnInit {
     this.anunciosService.getAnuncios()
     .then((anuncios: Anuncio[] ) => {
       this.anuncios = anuncios;
-    }).catch((param: any) => {
-      console.log('Error ao carregar os anúncios: \n', param);
+    }).catch((err: any) => {
+      console.error('Error ao carregar os anúncios: \n', err);
+      this.anuncios = null;
     });
   }
 
