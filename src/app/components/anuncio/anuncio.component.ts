@@ -36,7 +36,8 @@ export class AnuncioComponent implements OnInit {
         }
       })
       .catch( (err) => {
-        this.router.navigate(['/not-found']);
+        console.error('Error ao carregar o anúncio: \n', err);
+        this.anuncio = null;
       });
     });
   }

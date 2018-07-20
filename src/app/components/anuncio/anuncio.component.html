@@ -76,3 +76,13 @@
     </ng-template>
     
 </div>
+
+<div *ngIf="anuncio === undefined">
+    <div class="col-sm-12">
+        <img src="assets/loading.gif" class="mx-auto d-block">
+    </div>
+</div>
+
+<div *ngIf="anuncio === null">
+    <app-error503></app-error503>
+</div>
