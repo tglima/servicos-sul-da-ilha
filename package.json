@@ -1,6 +1,6 @@
 {
   "name": "servicos-sul-ilha",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "json-server": "json-server --watch src/assets/database/data.json"
+    "start:database": "json-server --watch src/assets/database/data.json"
   },
   "private": true,
   "dependencies": {
