@@ -40,6 +40,10 @@ Para funcionar em sua rede local, altere o arquivo **environment.prod.ts** subst
 apiUrl: 'http://127.0.0.1:3000/'
 ```
 
+## Deploy Web
+
+Um demo desta aplicação está disponível no link: [https://tglima-ssi.firebaseapp.com](https://tglima-ssi.firebaseapp.com). Neste deploy não utilizo mais o JSON Server, utilizo o [Firebase](https://firebase.google.com) para prover a API REST. Também utilizo o firebase como hosting.
+
 ## Licença
 
 O código fonte desta aplicação está sob [Licença MIT](LICENSE), todo o restante deve ser considerado conteúdo registrado dos seus respectivos proprietários e desenvolvedores.
