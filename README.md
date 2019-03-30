@@ -2,7 +2,6 @@
 
 Este projeto não possui fins comerciais. Seu objetivo é práticar meus conhecimentos obtidos após o estudo do Angular, Javascript e TypeScript.
 
-
 ## Requisitos
 
 Para rodar o projeto localmente, será necessário:
@@ -14,8 +13,7 @@ Para rodar o projeto localmente, será necessário:
 Para dispensar a necessidade de um banco de dados e uma API REST real, utilizei o [JSON Server](https://github.com/typicode/json-server). Sendo assim, é importante rodar o JSON Server para o pleno funcionamento da aplicação.
 
 ### Instalando o JSON Server
-Não será necessário instalar o JSON Server manualmente, o mesmo já se encontra na lista de dependências do projeto e será instalado automaticamente quando for executado o comando **npm install**.
-
+Não será necessário instalar o JSON Server manualmente, o mesmo já se encontra na lista de dependências do projeto e será instalado automaticamente quando for executado o comando **npm install --exact**.
 
 ### Executando o JSON Server
 Para executar o JSON Server neste projeto, abra um terminal na pasta raiz do projeto e execute o comando abaixo:
